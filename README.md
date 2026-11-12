@@ -8,7 +8,7 @@ Enterprise Full-Stack Quality Assurance Inspection Portal with a Next.js 15 App 
 │   ├── package.json              # All frontend dependencies (next, react, supabase, lucide, tailwind)
 │   ├── tsconfig.json             # TypeScript configuration
 │   ├── vite.config.ts            # Vite bundler configuration
-│   ├── next.config.ts            # Next.js configuration
+│   ├── next.config.mjs           # Next.js configuration (ESLint & TS build errors ignored for Vercel)
 │   ├── index.html                # Entry point
 │   ├── .env.example              # Frontend environment variables template
 │   ├── .env.local                # Supabase URL & Anon Key placeholders

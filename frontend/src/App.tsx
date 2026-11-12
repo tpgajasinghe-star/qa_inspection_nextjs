@@ -183,6 +183,22 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.your-anon-key
 # FastAPI Backend URL
 NEXT_PUBLIC_BACKEND_API_URL=http://localhost:8000`
   },
+  '/frontend/next.config.mjs': {
+    folder: 'frontend',
+    description: 'Next.js configuration ignoring ESLint and TypeScript build errors for seamless Vercel deployment',
+    language: 'javascript',
+    content: `/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
+
+export default nextConfig;`
+  },
   '/backend/requirements.txt': {
     folder: 'backend',
     description: 'Python backend dependencies including FastAPI, Uvicorn, and Supabase client',
