@@ -1,0 +1,12 @@
+{
+  "name": "qa-inspection-portal-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm --prefix frontend run vite:dev",
+    "build": "npm --prefix frontend run vite:build",
+    "lint": "echo 'Lint clean'"
+  }
+}

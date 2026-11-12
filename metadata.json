@@ -1,0 +1,6 @@
+{
+  "name": "QA Inspection Portal",
+  "description": "Full-Stack QA Inspection Portal monorepo with Next.js App Router frontend and Python FastAPI backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
